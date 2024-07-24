@@ -6,6 +6,8 @@ input[type="text"]{
     border-color:rgb(87, 118, 150);
     padding: 1%;
     margin-bottom: 4%;
+    margin-left: 4%;
+    width: 20%;
 }
 select{
     background-color:white;
@@ -13,6 +15,7 @@ select{
     border-color:rgb(87, 118, 150);
     padding: 1%;
     margin-bottom: 4%;
+    margin-left: 4%;
 }
 input[type="password"]{
     background-color:white;
@@ -20,6 +23,9 @@ input[type="password"]{
     border-color:rgb(87, 118, 150);
     padding: 1%;
     margin-bottom: 4%;
+    margin-left: 4%;
+    width: 20%;
+
 }
 input[type="date"]{
     background-color:white;
@@ -27,6 +33,9 @@ input[type="date"]{
     border-color:rgb(87, 118, 150);
     padding: 1%;
     margin-bottom: 4%;
+    margin-left: 4%;
+    width: 20%;
+
 }
 input[type="email"]{
     background-color:white;
@@ -34,14 +43,21 @@ input[type="email"]{
     border-color:rgb(87, 118, 150);
     padding: 1%;
     margin-bottom: 4%;
+    margin-left: 4%;
+    width: 20%;
+
 }
 fieldset{
     background-color:white;
     border-radius: 10px;
     border-color:rgb(87, 118, 150);
-    padding: 1%;
-    width: 100%;
-    margin: 4%;
-    margin-top: 0%;
-    line-height: 250%;
+    margin-bottom: 5%;
+    width: 40%;
+}
+input[type="checkbox"]{
+    background-color:white;
+    border-radius: 10px;
+    border-color:rgb(87, 118, 150);
+    padding: 3%;
+    margin-left: 3%;
 }

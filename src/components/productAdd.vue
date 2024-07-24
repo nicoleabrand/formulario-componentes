@@ -145,35 +145,35 @@ function salvar() {
 <template class="form">
   <form @submit.prevent="salvar">
     <div class="inputs">
-      <label for="nome">Nome</label>
+      <label for="nome">Nome: </label>
       <input type="text" id="nome" v-model="form.nome" placeholder="Insira seu nome" />
     </div>
     <div>
-      <label for="email">E-mail</label>
+      <label for="email">E-mail: </label>
       <input type="email" id="email" v-model="form.email" placeholder="Insira seu email" />
     </div>
     <div>
-      <label for="senha">Senha</label>
+      <label for="senha">Senha: </label>
       <input type="password" id="senha" v-model="form.senha" placeholder="Insira uma senha"/>
     </div>
     <div>
-      <label for="confisenha">Confirmação de senha</label>
+      <label for="confisenha">Confirmação de senha: </label>
       <input type="password" id="confisenha" v-model="form.confisenha" placeholder="Confirme sua senha"/>
     </div>
     <div>
-      <label for="datanasc">Data de nascimento</label>
+      <label for="datanasc">Data de nascimento: </label>
       <input type="date" id="datanasc" v-model="form.datanasc" />
     </div>
     <div>
-      <label for="endereco">Endereço</label>
+      <label for="endereco">Endereço: </label>
       <input type="text" id="enderco" v-model="form.endereco" placeholder="Insira seu endereçõ"/>
     </div>
     <div>
-      <label for="cidade">Cidade</label>
+      <label for="cidade">Cidade: </label>
       <input type="text" id="cidade" v-model="form.cidade" placeholder="Insira sua cidade"/>
     </div>
     <div>
-      <label for="estado">Estado:</label>
+      <label for="estado">Estado: </label>
       <select v-model="form.estado" id="estado">
         <option value="" disabled>Selecione um estado</option>
         <option v-for="estado in estados" :key="estado.sigla" :value="estado.nome">
@@ -181,11 +181,11 @@ function salvar() {
         </option>
       </select>
     </div>
-    <label for="hobbies">Hobbies</label>
+    <label for="hobbies">Hobbies: </label>
     <input type="text" id="hobbies" v-model="form.hobbies" placeholder="Insira seu(s) hobbie(s)"/>
     <div>
       <fieldset>
-        <legend>Linguagem de programação:</legend>
+        <legend>Linguagem de programação: </legend>
         <!-- arrumar o checkbox, um clique esta selecionando todos -->
         <template v-for="linguagem in linguagensprog" :key="linguagem.nome">
           <label>
@@ -194,7 +194,7 @@ function salvar() {
           </label>
         </template>
       </fieldset>
-      <label for="bio">Biografia</label>
+      <label for="bio">Biografia: </label>
       <input type="text" id="bio" v-model="form.bio" placeholder="Escreva uma mini biografia"/>
     </div>
     <button type="submit">Salvar</button>
@@ -202,7 +202,8 @@ function salvar() {
 </template>
 
 <style scoped>
-input[type="text"]{
-
+form{
+  background-color: gray;
 }
+
 </style>
