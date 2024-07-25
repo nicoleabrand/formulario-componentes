@@ -37,9 +37,11 @@ function adicionar(dados) {
 
 <template>
   <div>
-  <h1>Formulário</h1></div>
+  <h1>Formulário</h1>
+  </div>
   <div class="flex-container">
-  <product-add @adicionar="adicionar"/> </div>
+  <product-add @adicionar="adicionar"/>
+  </div>
   <div v-if="blabla" class="flex-container">
   <product-list :form="form" @adicionar="adicionar"/>
 </div>
@@ -48,16 +50,17 @@ function adicionar(dados) {
 
 <style scoped>
 h1{
-  text-align: center;
-  font-family:'Times New Roman', Times, serif ;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 div, .flex-container{
-  border-radius: 10px;
-  width: 70%;
-  margin: auto;
+  width: 50%;
   display: flex;
+  justify-content: end;
   flex-direction: column;
-  background-color: gray;
+  background-color: rgb(185, 124, 124);
 }
+
 
 </style>

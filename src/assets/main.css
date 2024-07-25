@@ -1,63 +1,74 @@
 @import '@mdi/font/css/materialdesignicons.css';
 
-input[type="text"]{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    padding: 1%;
-    margin-bottom: 4%;
-    margin-left: 4%;
-    width: 20%;
+body{
+    background-color: pink;
 }
-select{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    padding: 1%;
-    margin-bottom: 4%;
-    margin-left: 4%;
+input[type='text'] {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 1%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  width: 50%;
 }
-input[type="password"]{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    padding: 1%;
-    margin-bottom: 4%;
-    margin-left: 4%;
-    width: 20%;
+select {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 1%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  display: flex;
+  justify-content: start;
+  width: 50%;
 
 }
-input[type="date"]{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    padding: 1%;
-    margin-bottom: 4%;
-    margin-left: 4%;
-    width: 20%;
-
+input[type='password'] {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 1%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  width: 50%;
 }
-input[type="email"]{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    padding: 1%;
-    margin-bottom: 4%;
-    margin-left: 4%;
-    width: 20%;
-
+input[type='date'] {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 1%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  width: 50%;
 }
-fieldset{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    margin-bottom: 5%;
-    width: 40%;
+input[type='email'] {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 1%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  width: 50%;
+  
 }
-input[type="checkbox"]{
-    background-color:white;
-    border-radius: 10px;
-    border-color:rgb(87, 118, 150);
-    padding: 3%;
-    margin-left: 3%;
+fieldset {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 1%;
+  margin-bottom: 5%;
+  width: 75%;
+  display: flex;
+  justify-content: start;
+  margin-left: 2%;
+}
+input[type='checkbox'] {
+  background-color: white;
+  border-radius: 10px;
+  border-color: rgb(151, 65, 177);
+  padding: 3%;
+  margin-left: 3%;
+  text-align: center;
+  width: 50%;
 }
