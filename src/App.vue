@@ -16,49 +16,51 @@ const form = reactive({
   lingprog: '',
   bio: ''
 })
-const save= ref(false)
+const save = ref(false)
 
 function adicionar(dados) {
   Object.assign(form, dados)
   console.log(form)
   if (form.nome === '' || form.email === '' || form.senha == '') {
     alert('Os campos nome, e-mail e senha são obrigatórios')
-  }
-  else if(form.senha!=form.confisenha){
+  } else if (form.senha != form.confisenha) {
     alert('Os campos senha e confirmação de senha não correspondem')
+  } else {
+    save.value = !save.value
   }
-    else{save.value = !save.value
-    }
-  }
-
-
-
+}
 </script>
 
 <template>
-    <!-- arrumar colunas do flex container -->
+  <!-- arrumar colunas do flex container -->
+  <h1>Formulário</h1>
   <div class="flex-container">
-    <h1>Formulário</h1>
-    <product-add @adicionar="adicionar"/>
-  </div>
-    <div v-if="save" class="flex-container">
-      <product-list :form="form" @adicionar="adicionar"/>
+    <product-add class="flex-item" @adicionar="adicionar" />
+    <product-list class="flex-item" v-if="save" :form="form" @adicionar="adicionar" />
   </div>
 </template>
 
 <style scoped>
-h1{
+h1 {
   margin: auto;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 300%;
+  padding: 1%;
 }
-div, .flex-container{
-  width: 50%;
+
+.flex-container {
+  width: 100%;
   display: flex;
-  justify-content: end;
-  flex-direction: column;
-  column-gap: 10%;
+  justify-content: space-between;
+  flex-direction: row;
+
+  row-gap: 2rem;
+}
+
+.flex-item {
+  width: 49%;
   background-color: rgb(185, 124, 124);
   border-radius: 3%;
 }
-
 </style>
