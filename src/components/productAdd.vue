@@ -209,8 +209,14 @@ function salvar() {
 button{
   display: flex;
   justify-content: start;
-  margin-left: 2%;
+  margin: 2%;
   background-color: palevioletred;
+  height: 25px;
+  text-align: center;
+  border-radius: 10%;
+  border-color: rgb(151, 65, 177);
+  font-size: 100%;
+  color: white;
 }
 form {
    /*opaaaaaaaa*/
@@ -228,7 +234,9 @@ label{
   justify-content: left;
   margin-top: 2%;
   margin-left: 2%;
+  font-family: "Montserrat", sans-serif;
 }
+
 
 
 </style>

@@ -3,7 +3,7 @@
 </script>
 <template>
   <div class="resultado">
-    <h1>RESULTADOS</h1>
+    <h1>Informações</h1>
         <p>Nome: {{ form.nome }}</p>
         <p>Email: {{ form.email }}</p>
         <p>Data de nascimento: {{ form.datanasc }}</p>
@@ -17,5 +17,11 @@
 </template>
 
 <style scoped>
+h1{
+  font-family: "Roboto Slab", serif;
+}
+p{
+  font-family: "Montserrat", sans-serif;
+}
 
 </style>

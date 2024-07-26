@@ -16,7 +16,7 @@ const form = reactive({
   lingprog: '',
   bio: ''
 })
-const blabla= ref(false)
+const save= ref(false)
 
 function adicionar(dados) {
   Object.assign(form, dados)
@@ -27,7 +27,7 @@ function adicionar(dados) {
   else if(form.senha!=form.confisenha){
     alert('Os campos senha e confirmação de senha não correspondem')
   }
-    else{blabla.value = !blabla.value
+    else{save.value = !save.value
     }
   }
 
@@ -36,31 +36,28 @@ function adicionar(dados) {
 </script>
 
 <template>
-  <div>
-  <h1>Formulário</h1>
-  </div>
   <div class="flex-container">
-  <product-add @adicionar="adicionar"/>
+    <h1>Formulário</h1>
+    <product-add @adicionar="adicionar"/>
   </div>
-  <div v-if="blabla" class="flex-container">
-  <product-list :form="form" @adicionar="adicionar"/>
-</div>
-
+    <div v-if="save" class="flex-container">
+      <product-list :form="form" @adicionar="adicionar"/>
+  </div>
 </template>
 
 <style scoped>
 h1{
   margin: auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
+  font-family: "Roboto Slab", serif;
 }
 div, .flex-container{
   width: 50%;
   display: flex;
   justify-content: end;
   flex-direction: column;
+  column-gap: 10%;
   background-color: rgb(185, 124, 124);
+  border-radius: 3%;
 }
-
 
 </style>
