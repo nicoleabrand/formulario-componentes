@@ -36,6 +36,7 @@ function adicionar(dados) {
 </script>
 
 <template>
+    <!-- arrumar colunas do flex container -->
   <div class="flex-container">
     <h1>Formulário</h1>
     <product-add @adicionar="adicionar"/>
